@@ -1,0 +1,80 @@
+/* Tables
+===========================================================
+*/
+
+        
+/* Default (Borderless) Table
+-----------------------------------------------------------
+Simple tables can have two levels of headers. Each header 
+cell should have scope='col' or scope='row'.
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">...</th>
+                <th scope="col">...</th>
+                <th scope="col">..</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+    </table>
+*/
+
+table {
+    margin: $margin 0;
+    border-collapse: collapse;
+    border-spacing: 0; 
+    border-width: 0;
+    min-width: 100%;
+}
+
+thead {
+    tr {
+        border-bottom: 4px solid $black;
+    }
+    th {
+        text-align: left;
+    }
+}
+
+td, th {
+    border-bottom: 1px solid $grey4;
+    padding: $padding; 
+    vertical-align: top;
+}
+
+
+/* Bordered Table
+-----------------------------------------------------------
+
+    <table class="bordered">
+        ...
+    </table>
+*/
+
+.bordered {
+    td {
+        border: 1px solid $grey4;
+    }
+}
+
+
+/* Striped Table
+-----------------------------------------------------------
+
+    <table class="striped">
+        ...
+    </table>
+*/
+
+.striped tbody {
+    tr:nth-child(even) {
+        background-color: $grey6;
+    }
+}

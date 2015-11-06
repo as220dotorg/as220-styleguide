@@ -1,4 +1,5 @@
 .DS_Store
+composer.lock
 config.ini
 latest-change.txt
 *-ck.js

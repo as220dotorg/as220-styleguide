@@ -1,0 +1,9 @@
+<ul class="sg-colors">
+{% for c in colors %}
+    <li class="sg-color">
+        <span class="sg-swatch" style="background: {{ c.hex }};"></span>
+		<span class="sg-label">{{ c.name }}<br>{{ c.hex }}</span>
+    </li>
+{% endfor %}
+</ul>
+	

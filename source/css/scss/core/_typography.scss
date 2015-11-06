@@ -1,0 +1,47 @@
+/* Typography
+===========================================================
+*/
+
+
+/* Document
+-----------------------------------------------------------
+*/
+
+html {
+  font-family: $font-sans;
+  font-size: $base-font-size;
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+
+/* Custom Fonts
+-----------------------------------------------------------
+Brand:
+
+    <p class="font-brand">...</p>
+
+Sans-serif:
+
+    <p class="font-sans">...</p>
+
+Serif:
+
+    <p class="font-serif">...</p>
+    
+*/
+
+.font-brand {
+    font-family: $font-brand;
+}
+
+.font-sans {
+    font-family: $font-sans;
+}
+
+.font-serif {
+    font-family: $font-serif;
+}
