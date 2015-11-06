@@ -140,7 +140,7 @@ td, th { padding: 0; }
 */
 .grid_item { background: rgba(255, 0, 0, 0.1); }
 
-[class^='column_'] { background: rgba(255, 0, 0, 0.1); }
+[class^='colgroup_column-'] { background: rgba(255, 0, 0, 0.1); }
 
 /* Variables
 ===========================================================
@@ -436,5 +436,49 @@ spaces between grid objects.
   .grid-sixth .grid_item:nth-child(6n) { margin-right: 0; }
   .grid-seventh .grid_item { width: 12.57%; }
   .grid-seventh .grid_item:nth-child(7n) { margin-right: 0; } }
+/* Columns
+===========================================================
+Classes for page colgroups with columns. This will be used 
+with the Drupal Paragraphs module. 
+*/
+/* Colgroup Context
+-----------------------------------------------------------
+This wrapper element established a content for the float-
+based colgroups that are built using the `.colum_` classes.
+
+All margins and padding are in percentages for the sake of 
+simplicity and cross-browser compatibilty.
+
+`.colgroup` has left and right padding:
+ <div class="colgroup"> ... </div> 
+`.colgroup-full` is for content without margins:       <div class="colgroup-full"> ... </div>
+*/
+.colgroup { padding: 0 4%; }
+.colgroup:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.colgroup--full { padding: 0; }
+
+/* Columns
+-----------------------------------------------------------
+`.colgroup_column-full` spans across all three columns.
+
+`.colgroup_column-left` floats to the left of the main content 
+and will be displayed before the main content when stacked.
+
+`.colgroup_column-right` floats to the left of the main content 
+and will be displayed before the main content when stacked.
+
+`.colgroup_column-main` is where the majority of content will be 
+placed. It is the central content area. 
+ <div class="colgroup"> <div class="colgroup_column-full"> ... </div> <div class="colgroup_column-left"> ... </div> <div class="colgroup_column-right"> ... </div> <div class="colgroup_column-main"> ... </div> </div>
+*/
+[class^='colgroup_column-'] { box-sizing: border-box; padding: 0 0.625rem; width: 100%; }
+@media (min-width: 36rem) { [class^='colgroup_column-'] { float: left; } }
+
+@media (min-width: 36rem) { .colgroup_column-full { width: 100%; clear: both; }
+  .colgroup_column-left { clear: both; width: 23.5%; }
+  .colgroup_column-left + .colgroup_column-main { margin-left: 2%; }
+  .colgroup_column-right { margin-left: 2%; width: 23.5%; }
+  .colgroup_column-main { margin-left: 25.5%; width: 49%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -62,6 +62,7 @@ $large-screen:      1201px !default;
 
 $text-breakpoint:   36rem !default;
 $grid-min-width:    36rem !default; // Minimum width to display a grid, otherwise stack
+$col-min-width:     36rem !default; // Minimum width to display layout columns, otherwise stack
 $text-max-width:    53rem !default;
 $site-max-width:    1040px !default;
 $site-margins:      3rem !default;
