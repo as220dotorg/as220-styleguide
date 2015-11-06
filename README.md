@@ -1,3 +1,43 @@
+# AS220 Patternlab
+
+## System Set Up
+
+### Install Composer
+
+https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx
+
+
+### Install Grunt
+
+http://gruntjs.com
+
+
+### Install Node Modules
+
+npm install
+
+
+### Run Grunfile.js
+
+grunt serve
+
+This will watch and compile SASS and Twig patters, launch a local server, and manage LiveReload.
+
+Note: it doesn't currently watch for new files so be sure to reload the script when you add new files.
+
+
+## Editing files
+
+Only edit files in the `source` directory.
+
+SASS fiels are in: `/source/css/scss/`
+
+Patterns are here: `/source/_patterns/` 
+
+
+* * *
+
+
 # Pattern Lab Standard Edition for Twig [DEVELOPER PREVIEW]
 
 The Standard Edition for Twig gives developers and designers a clean and stable base from which to develop a Twig-based pattern library.
