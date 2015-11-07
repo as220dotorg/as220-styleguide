@@ -156,6 +156,22 @@ cite a {
     }
 }
 
+h1 a, 
+h2 a, 
+h3 a {
+    &:link,
+    &:active,
+    &:visited {
+        color: $black;
+        border-bottom: 5px solid currentColor;
+    }
+    &:hover {
+        border-bottom: 5px solid currentColor;
+        background: $yellow;
+    }
+}
+
+
 
 /* Citation, Variable, Address, Definiton
 -----------------------------------------------------------

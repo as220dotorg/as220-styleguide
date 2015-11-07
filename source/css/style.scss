@@ -9,6 +9,7 @@ Import all SSCSS partials.
 */
 
 @import 'scss/lib/normalize'; // CSS reset to help browsers render elements more consistently
+@import 'scss/lib/flickity'; // Flickity carousel
 
 
 /* Core
@@ -39,5 +40,10 @@ Import all SSCSS partials.
 
 @import 'scss/modules/grids';
 @import 'scss/modules/columns';
+
+
+/* Partials
+-----------------------------------------------------------
+*/
 
 

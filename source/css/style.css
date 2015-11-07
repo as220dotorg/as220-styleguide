@@ -132,6 +132,60 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 td, th { padding: 0; }
 
+/*! Flickity v1.1.1
+http://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled { position: relative; }
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport { overflow: hidden; position: relative; height: 100%; }
+
+.flickity-slider { position: absolute; width: 100%; height: 100%; }
+
+/* draggable */
+.flickity-enabled.is-draggable { -webkit-tap-highlight-color: transparent; tap-highlight-color: transparent; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.flickity-enabled.is-draggable .flickity-viewport { cursor: move; cursor: -webkit-grab; cursor: grab; }
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down { cursor: -webkit-grabbing; cursor: grabbing; }
+
+/* ---- previous/next buttons ---- */
+.flickity-prev-next-button { position: absolute; top: 50%; width: 44px; height: 44px; border: none; border-radius: 50%; background: white; background: rgba(255, 255, 255, 0.75); cursor: pointer; /* vertically center */ -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+.flickity-prev-next-button:hover { background: white; }
+
+.flickity-prev-next-button:focus { outline: none; box-shadow: 0 0 0 5px #09F; }
+
+.flickity-prev-next-button:active { filter: alpha(opacity=60); /* IE8 */ opacity: 0.6; }
+
+.flickity-prev-next-button.previous { left: 10px; }
+
+.flickity-prev-next-button.next { right: 10px; }
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous { left: auto; right: 10px; }
+
+.flickity-rtl .flickity-prev-next-button.next { right: auto; left: 10px; }
+
+.flickity-prev-next-button:disabled { filter: alpha(opacity=30); /* IE8 */ opacity: 0.3; cursor: auto; }
+
+.flickity-prev-next-button svg { position: absolute; left: 20%; top: 20%; width: 60%; height: 60%; }
+
+.flickity-prev-next-button .arrow { fill: #333; }
+
+/* color & size if no SVG - IE8 and Android 2.3 */
+.flickity-prev-next-button.no-svg { color: #333; font-size: 26px; }
+
+/* ---- page dots ---- */
+.flickity-page-dots { position: absolute; width: 100%; bottom: -25px; padding: 0; margin: 0; list-style: none; text-align: center; line-height: 1; }
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot { display: inline-block; width: 10px; height: 10px; margin: 0 8px; background: #333; border-radius: 50%; filter: alpha(opacity=25); /* IE8 */ opacity: 0.25; cursor: pointer; }
+
+.flickity-page-dots .dot.is-selected { filter: alpha(opacity=100); /* IE8 */ opacity: 1; }
+
 /* Core
 -----------------------------------------------------------
 */
@@ -298,6 +352,9 @@ a:focus { box-shadow: 0 0 3px #ffd840, 0 0 7px #ffd840; outline: 0; }
 p a, li a, td a, th a, dd a, dt a, cite a { border-bottom: 2px solid currentColor; font-weight: 700; }
 p a:hover, li a:hover, td a:hover, th a:hover, dd a:hover, dt a:hover, cite a:hover { background: #ffd840; }
 
+h1 a:link, h1 a:active, h1 a:visited, h2 a:link, h2 a:active, h2 a:visited, h3 a:link, h3 a:active, h3 a:visited { color: #000000; border-bottom: 5px solid currentColor; }
+h1 a:hover, h2 a:hover, h3 a:hover { border-bottom: 5px solid currentColor; background: #ffd840; }
+
 /* Citation, Variable, Address, Definiton
 -----------------------------------------------------------
 Citation:
@@ -406,13 +463,11 @@ td, th { border-bottom: 1px solid #a7a9ac; padding: 0.625rem; vertical-align: to
 */
 /* Grids
 ===========================================================
-Classes for grids of objects
-
-For page layouts, see `_layout.scss`
+Classes for grids of objects.
 */
 /* Inline-Block Grids
 -----------------------------------------------------------
-Grids use the `inline-block` displat property. This allows 
+Grids use the `inline-block` display property. This allows 
 items of unequal heights to align properly, which would 
 require elements wrapping each row in a float-based 
 implementation. One caveat is that the `inline-block` 
@@ -421,9 +476,6 @@ unpredictable spacing. To avoid this, there must not be
 spaces between grid objects. 
  <div class="grid-third"> <!-- inline-block grid --><div class="grid_item"> ... </div><!-- --><div class="grid_item"> ... </div><!-- --><div class="grid_item"> ... </div><!-- --> </div>
 */
-.grid_item { box-sizing: border-box; padding: 0.625rem; margin-bottom: 0.625rem; width: 100%; }
-@media (min-width: 36rem) { .grid_item { margin-right: 2%; display: inline-block; vertical-align: top; *display: inline; *zoom: 1; } }
-
 @media (min-width: 36rem) { .grid-half .grid_item { width: 49%; }
   .grid-half .grid_item:nth-child(2n) { margin-right: 0; }
   .grid-third .grid_item { width: 32%; }
@@ -436,6 +488,9 @@ spaces between grid objects.
   .grid-sixth .grid_item:nth-child(6n) { margin-right: 0; }
   .grid-seventh .grid_item { width: 12.57%; }
   .grid-seventh .grid_item:nth-child(7n) { margin-right: 0; } }
+.grid_item { box-sizing: border-box; padding: 0.625rem; margin-bottom: 0.625rem; width: 100%; }
+@media (min-width: 36rem) { .grid_item { margin-right: 2%; display: inline-block; vertical-align: top; *display: inline; *zoom: 1; } }
+
 /* Columns
 ===========================================================
 Classes for page colgroups with columns. This will be used 
@@ -480,5 +535,8 @@ placed. It is the central content area.
   .colgroup_column-left + .colgroup_column-main { margin-left: 2%; }
   .colgroup_column-right { margin-left: 2%; width: 23.5%; }
   .colgroup_column-main { margin-left: 25.5%; width: 49%; } }
+/* Partials
+-----------------------------------------------------------
+*/
 
 /*# sourceMappingURL=style.css.map */

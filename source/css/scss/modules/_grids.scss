@@ -1,14 +1,12 @@
 /* Grids
 ===========================================================
-Classes for grids of objects
-
-For page layouts, see `_layout.scss`
+Classes for grids of objects.
 */
 
 
 /* Inline-Block Grids
 -----------------------------------------------------------
-Grids use the `inline-block` displat property. This allows 
+Grids use the `inline-block` display property. This allows 
 items of unequal heights to align properly, which would 
 require elements wrapping each row in a float-based 
 implementation. One caveat is that the `inline-block` 
@@ -30,23 +28,6 @@ spaces between grid objects.
         -->
     </div>
 */
-
-.grid {
-}
-
-.grid_item {
-    box-sizing: border-box;
-    padding: $padding;
-    margin-bottom: $margin;
-    width: 100%;
-    @media (min-width: $grid-min-width) {
-        margin-right: 2%;
-        display: inline-block;
-        vertical-align: top;
-        *display: inline; // for old ie browsers
-        *zoom: 1;
-    }
-}
 
 @media (min-width: $grid-min-width) {
     // Half
@@ -92,4 +73,19 @@ spaces between grid objects.
         margin-right: 0;
     }
 }
+
+.grid_item {
+    box-sizing: border-box;
+    padding: $padding;
+    margin-bottom: $margin;
+    width: 100%;
+    @media (min-width: $grid-min-width) {
+        margin-right: 2%;
+        display: inline-block;
+        vertical-align: top;
+        *display: inline; // for old ie browsers
+        *zoom: 1;
+    }
+}
+
 
