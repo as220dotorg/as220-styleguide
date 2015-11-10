@@ -3,4 +3,5 @@ composer.lock
 config.ini
 latest-change.txt
 *-ck.js
-*.sass-cache/
+*.sass-cache
+node_modules
