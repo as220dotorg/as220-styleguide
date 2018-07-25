@@ -1,0 +1,70 @@
+// Teaser
+//
+// Custom teaser component. Use when listing content. 
+//
+// Styleguide: Component.Teaser
+
+.teaser {
+  font-size: 0.875rem;
+  line-height: 1.4em;
+
+  .eyebrow {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .title,
+  h1.title,
+  h2.title,
+  h3.title,
+  h4.title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  img + .title,
+  img + .info {
+    margin-top: 1rem;
+  }
+
+  .date {
+    color: darken($gray-medium, 10%);
+  }
+
+  .type {}
+
+  .author {}
+
+  .role {}
+
+  .location {
+    color: darken($gray-medium, 10%);
+  }
+
+  .description {}
+
+  .link {}
+}
+
+a.teaser {
+   color: $black;
+   &:hover {
+     color: currentColor;
+   }
+}
+
+.columns a.teaser:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.column.teaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .info {}
+}
+
+.content .teaser {
+  @extend .teaser;
+}

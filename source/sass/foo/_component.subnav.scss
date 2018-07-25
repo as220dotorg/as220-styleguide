@@ -1,0 +1,43 @@
+// Subnav
+//
+// Custom subnav component.
+//
+// Styleguide: Component.Subnav
+
+.subnav {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  margin-bottom: $column-gap;
+  @include tablet {
+    position: absolute;
+    margin-left: calc(-1 * #{$column-gap});
+    padding: $column-gap;
+    width: calc(25% + #{$column-gap / 2});
+    float: left;
+    z-index: +1;
+  }
+
+  .menu-list {
+    list-style: none;
+    border-top: 1px solid $gray-light;
+  }
+
+  .menu-list a {
+    padding-left: 0;
+    border-radius: 0;
+    font-weight: bold;
+  }
+
+  .menu-list a.is-active {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .menu-list > li {
+    border-bottom: 1px solid $gray-light;
+  }
+}
+
+.content .subnav li + li {
+  margin-top: 0;
+}

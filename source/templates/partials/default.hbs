@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>{{title}} | {{site.title}}</title>
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/apple-touch-icon-72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/apple-touch-icon-114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/img/apple-touch-icon-144.png" />
+<link rel="shortcut icon" href="./assets/img/faveicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="./assets/css/foo.css">
+<style>
+{{#block "pagestyle"}}{{/block}}
+</style>
+</head>
+
+<body class="{{bodyclass}}">
+
+{{> header }}
+
+{{#if hero includeZero=true}}
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <img src="img/{{hero}}" alt="{{title}}">
+      </div>
+    </div>
+  </section>
+{{/if}}
+
+{{#block "precontent"}}
+{{/block}}
+
+<section class="section">
+  <div class="container">
+    {{#block "content"}}
+      content default.
+    {{/block}}
+  </div>
+</section>
+
+{{#block "postcontent"}}
+{{/block}}
+
+{{> footer }}
+
+{{> dev-footer }}
+
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+---
+title: "Artist"
+---
+
+{{#extend "default"}}
+  {{#content "precontent"}}
+    <section class="hero hero-artist">
+      <div class="columns is-gapless">
+        <div class="column is-two-thirds">
+          <img src="./assets/img/artist-5-hero.jpg" alt="">
+        </div>
+        <div class="column is-one-third">
+          <div class="teaser">
+            <h2 class="title is-3">Lucie Searle</h2>
+            <img src="./assets/img/artist-lucie-searle.jpg" alt="">
+            <div class="role">Real Estate Development</div>
+            <div class="role">Member since 1985</div>
+            <div class="link"><a href="#">lucie@as220.org</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{/content}}
+  {{#content "content"}}
+    <div class="folio folio-stacked">
+      <figure class="folio_item artwork">
+        <div class="artwork_text content">
+          <p>During her time as Development Manager and Preservationist at AS220, Lucie Searle has been at the center of AS220's successful renovation of three historic buildings in downtown Providence, which have tripled the size of the organization. A
+            real estate developer with over 25 years of experience in Boston and Providence, Lucie has a keen ability to assess properties and match them with the needs of an individual or organization. She will discuss the pros and cons of buying and
+            renting and she will describe financial mechanisms &mdash; from simple to complex &mdash; that can be pieced together for build-out, renovation, purchase, lease and maintenance of a property.</p>
+          <p>This presentation will be structured more like a guided conversation than a formal workshop. Participants are invited to submit questions ahead of time that will be addressed during the talk.</p>
+        </div>
+      </figure>
+    </div>
+  {{/content}}
+  {{#content "postcontent"}}
+    {{>section-more-community-members}}
+  {{/content}}
+{{/extend}}

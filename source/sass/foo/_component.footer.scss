@@ -1,0 +1,52 @@
+// Footer
+//
+// Customization of the footer
+//
+// Styleguide: Component.Footer
+
+.footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: $black;
+  background-color: $white;
+  .container {
+    position: relative;
+    border-top: 6px solid $gray-light;
+    padding: 4em 0 3em;
+  }
+  .columns > .column {
+    padding-bottom: 1em;
+  }
+  a {
+     color: currentColor;
+     &:hover {
+       color: $berry;
+     }
+   }
+   .title {
+     font-family: initial;
+   }
+   p.title {
+     margin-bottom: 0.25em;
+   }
+   .copyright {
+     position: absolute;
+     left: 0;
+     top: 1em;
+     font-size: 0.75em;
+     color: $gray-medium;
+   }
+   .social-links {
+     font-size: 1.25em;
+     li + li {
+       margin-left: 0.5em;
+     }
+   }
+}
+
+// Remove border for footer when action block is present
+
+.hero + .footer .container {
+  margin-top: 0;
+  border-top: 0;
+}

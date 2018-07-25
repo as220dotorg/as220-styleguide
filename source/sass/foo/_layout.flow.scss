@@ -1,0 +1,97 @@
+// Layout Flow
+//
+// A custom layout method. Flow layouts are intended for use with the Drupal
+// Paragraphs module
+//
+// Styleguide: Layout.Flow
+
+.columns.col-header {
+  margin-bottom: 2em;
+}
+
+.main {
+  padding-bottom: 3em;
+
+  .flow {
+    padding-top: 3em;
+  }
+}
+
+.flow {
+  @include tablet {
+    margin-left: calc(25% - #{$column-gap / 2});
+    margin-right: calc(25% - #{$column-gap / 2});
+    margin-top: -$column-gap;
+
+    &:last-child {
+      margin-bottom: -$column-gap;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: calc(1.5rem - #{$column-gap});
+    }
+  }
+
+  &::after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
+
+.flow [class^=flow] {
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  @include tablet {
+    padding: $column-gap;
+  }
+}
+
+.flow_full {
+  clear: both;
+  @include tablet {
+    margin-left: -50%;
+    margin-right: -50%;
+  }
+}
+
+.flow_middle {
+  @include tablet {}
+}
+
+.flow_left {
+  @include tablet {
+    float: left;
+    margin-left: -50%;
+    width: 50%;
+  }
+}
+
+.flow_right {
+  @include tablet {
+    float: right;
+    margin-right: -50%;
+    width: 50%;
+  }
+}
+
+.flow_left_half {
+  @include tablet {
+    float: left;
+    margin-left: -50%;
+    width: 99.5%;
+  }
+}
+
+.flow_right_half {
+  @include tablet {
+    float: right;
+    margin-right: -50%;
+    width: 99.5%;
+  }
+}

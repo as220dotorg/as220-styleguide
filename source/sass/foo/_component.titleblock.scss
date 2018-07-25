@@ -1,0 +1,28 @@
+// Title Block
+//
+// Interacts with subnav and flow
+//
+// Styleguide: Component.TitleBlock
+
+.block.block-page-title-block {
+  margin-bottom: 0;
+  @include tablet {
+    margin-left: calc(25% - #{$column-gap / 2});
+    z-index: -1;
+  }
+}
+
+.title-block {
+  margin-bottom: 0;
+  box-sizing: border-box;
+  @include tablet {
+    padding: $column-gap;
+  }
+}
+
+.subnav + .block-page-title-block {
+  @include tablet {
+    width: calc(75% + #{$column-gap / 2});
+    margin-right: calc(-1 * #{$column-gap});
+  }
+}

@@ -1,0 +1,57 @@
+---
+title: "Artist"
+bodyclass: "folio-dark"
+---
+
+{{#extend "default"}}
+  {{#content "precontent"}}
+    <section class="hero hero-artist">
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <img src="./assets/img/artist-3-hero.jpg" alt="">
+        </div>
+        <div class="column is-one-third">
+          <div class="teaser">
+            <h2 class="title is-3">Mickey Zacchilli</h2>
+            <img src="./assets/img/artist-mickey-zachilli.jpg" alt="">
+            <div class="role">Artist</div>
+            <div class="role">Printshop Founding Member</div>
+            <div class="link"><a href="#">mickeyz.org</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{/content}}
+  {{#content "content"}}
+    <div class="folio folio-columns">
+      <figure class="folio_item artwork">
+        <div class="artwork_image">
+          <img src="./assets/img/artist-3-img-01.jpg" alt="">
+        </div>
+      </figure>
+      <figure class="folio_item artwork">
+        <div class="artwork_image">
+          <img src="./assets/img/artist-3-img-02.jpg" alt="">
+        </div>
+      </figure>
+      <figure class="folio_item artwork">
+        <div class="artwork_image">
+          <img src="./assets/img/artist-3-img-03.jpg" alt="">
+        </div>
+      </figure>
+      <figure class="folio_item artwork">
+        <div class="artwork_image">
+          <img src="./assets/img/artist-3-img-04.jpg" alt="">
+        </div>
+      </figure>
+      <figure class="folio_item artwork is-full">
+        <div class="artwork_image">
+          <img src="./assets/img/artist-3-img-05.jpg" alt="">
+        </div>
+      </figure>
+    </div>
+  {{/content}}
+  {{#content "postcontent"}}
+    {{>section-more-community-members}}
+  {{/content}}
+{{/extend}}

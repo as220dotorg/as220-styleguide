@@ -1,0 +1,61 @@
+---
+title: "Artist"
+---
+
+{{#extend "default"}}
+  {{#content "precontent"}}
+    <section class="hero hero-artist">
+      <div class="columns is-gapless">
+        <div class="column is-two-thirds">
+          <img src="./assets/img/artist-1-hero.jpg" alt="">
+        </div>
+        <div class="column is-one-third">
+          <div class="teaser">
+            <h2 class="title is-3">Umberto Crenca</h2>
+            <img src="./assets/img/artist-umberto-crenca.jpg" alt="">
+            <div class="role">Artist</div>
+            <div class="role">AS220 Founder</div>
+            <div class="link"><a href="#">umbertocrenca.com</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{/content}}
+  {{#content "content"}}
+    <div class="folio folio-stacked">
+      <figure class="folio_item artwork">
+        <div class="artwork_image">
+          <img src="./assets/img/artist-1-img-01.jpg" alt="">
+        </div>
+        <figcaption class="artwork_caption">
+          <div class="artwork_title">Syncopate, 2014</div>
+          <div class="artwork_medium">Paint on hand-cut canvas, 15 x 13"</div>
+          <div class="artwork_other">Private Collection</div>
+        </figcaption>
+      </figure>
+      <figure class="folio_item artwork">
+        <div class="artwork_image">
+          <img src="./assets/img/artist-1-img-02.jpg" alt="">
+        </div>
+        <figcaption class="artwork_caption">
+          <div class="artwork_title">Syncopate, 2014</div>
+          <div class="artwork_medium">Paint on hand-cut canvas, 15 x 13"</div>
+          <div class="artwork_other">Private Collection</div>
+        </figcaption>
+      </figure>
+      <figure class="folio_item artwork">
+        <div class="artwork_image">
+          <img src="./assets/img/artist-1-img-03.jpg" alt="">
+        </div>
+        <figcaption class="artwork_caption">
+          <div class="artwork_title">Syncopate, 2014</div>
+          <div class="artwork_medium">Paint on hand-cut canvas, 15 x 13"</div>
+          <div class="artwork_other">Private Collection</div>
+        </figcaption>
+      </figure>
+    </div>
+  {{/content}}
+  {{#content "postcontent"}}
+    {{>section-more-community-members}}
+  {{/content}}
+{{/extend}}

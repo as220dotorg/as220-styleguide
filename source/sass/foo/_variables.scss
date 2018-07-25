@@ -1,0 +1,56 @@
+// Bulma Variables
+//
+// * Assign colors
+// * Set fonts
+// * Customize type sizes
+// * Customize font weights
+// * Customize grid dimensions
+// * Set responsive breakpoints
+//
+// Styleguide: Base.Variables.Bulma
+
+$size-1: 5.63rem !default;
+$size-2: 3.5rem !default;
+$size-3: 2.5rem !default;
+$size-4: 1.75rem !default;
+$size-5: 1.25rem !default;
+$size-6: 0.88rem !default;
+$size-7: 0.63rem !default;
+$weight-light: 300 !default;
+$weight-normal: 400 !default;
+$weight-medium: 600 !default;
+$weight-semibold: 600 !default;
+$weight-bold: 600 !default;
+
+// Font Settings
+
+$font-brand: 'Montserrat', 'Helvetica Neue', 'Arial', sans-serif !default;
+
+// Responsiveness
+// The container gap, which acts as the offset for breakpoints
+// $gap: 48px !default;
+
+$column-gap: 1.5rem !default;
+
+// Design Colors
+
+$yellow: #ffd740 !default;
+$yellow-dark: #dfbc38 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+$gray-light: #e1e1e1 !default;
+$gray-medium: #a6a8ab !default;
+$berry: #b61c8c !default;
+$footer-background-color: #ffffff;
+
+// Functional Colors
+
+$primary: $berry;
+$primary-invert: $white;
+$grey-darker: $black;
+
+// Radius
+
+$radius-small: 0 !default;
+$radius: 0 !default;
+$radius-large: 0 !default;

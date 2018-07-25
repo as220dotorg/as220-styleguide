@@ -1,0 +1,42 @@
+---
+title: "Event"
+---
+
+{{#extend "default"}}
+  {{#content "precontent"}}
+    <section class="hero hero-split is-dark">
+      <div class="columns is-gapless">
+        <div class="column is-two-thirds">
+          <img src="./assets/img/event-hero.jpg" alt="">
+        </div>
+        <div class="column is-one-third">
+          <div class="teaser">
+            <div class="eyebrow">Event</div>
+            <h2 class="title is-3">Hartley C. White is Finally Coming!</h2>
+            <div class="date">September 8, 2015</div>
+            <div class="author">By Jacob Nathan</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{/content}}
+  {{#content "content"}}
+    <div class="flow content">
+      <div class="flow_left">
+        <figure>
+          <img src="./assets/img/event-bicycle-lady.jpg" alt="">
+        </figure>
+      </div>
+      <div class="flow_middle">
+        <h3>His first tour on over 30 years as a musician ...</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus varius sapien non mollis. Integer aliquet tristique erat, sit amet auctor ipsum tristique varius. In ante sapien, venenatis nec sapien vitae, sodales volutpat tellus. Maecenas
+          quis dui nulla. Maecenas arcu purus, scelerisque sit amet ipsum eu, finibus pulvinar nisl. Aliquam convallis, mi vel suscipit faucibus, nulla lacus eleifend tellus, nec pellentesque dui sapien ut turpis. Nunc blandit nibh in ex imperdiet, at
+          egestas sem gravida. In magna dui, convallis sit amet imperdiet eget, venenatis et velit. Integer imperdiet efficitur velit. Vestibulum et neque turpis. Maecenas vel metus et enim fermentum placerat vitae ut felis. Aenean in orci varius, tempus
+          odio at, tristique orci.</p>
+      </div>
+    </div>
+  {{/content}}
+  {{#content "postcontent"}}
+    {{>section-more-news}}
+  {{/content}}
+{{/extend}}

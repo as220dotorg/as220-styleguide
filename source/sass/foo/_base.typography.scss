@@ -1,0 +1,241 @@
+// Typography
+//
+// Text styles for headings, paragraphs, quotes, etc. Note:
+// Bulma requires basic elements to be in a `.content`
+// container.
+//
+// Styleguide: Base.Typography
+
+
+// Body
+//
+// Styleguide: Base.Typography.Body
+
+$type-breakpoint: (
+    small: 30em,
+    medium: 37.4em,
+    large: 75em
+);
+
+body {
+  color: $black;
+}
+
+
+// Headings
+//
+// Styleguide: Base.Typography.Headings
+
+.content {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: $font-brand;
+    color: currentColor;
+  }
+
+  @mixin h1 {
+      margin-top: 0;
+      margin-bottom: 0.2875em;
+      font-size: 2em;
+      line-height: 1.125;
+      @media (min-width: map-get($type-breakpoint, medium)) {
+          font-size: 4em;
+      }
+  }
+
+  h1, *.h1 { @include h1; }
+
+  @mixin h2 {
+      margin-top: 0;
+      margin-bottom: 1.0625em;
+      font-size: 1.5625em;
+      line-height: 0.96;
+      @media (min-width: map-get($type-breakpoint, medium)) {
+          margin-bottom: 0.495em;
+          font-size: 3em;
+          line-height: 1;
+      }
+  }
+  h2, *.h2 { @include h2; }
+  @mixin h3 {
+      margin-top: 0;
+      margin-bottom: 1.0625em;
+      font-size: 1.25em;
+      line-height: 0.96;
+      @media (min-width: map-get($type-breakpoint, medium)) {
+          font-size: 1.5625em;
+      }
+  }
+
+  h3, *.h3 { @include h3; }
+
+  @mixin h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 1em;
+      line-height: 1.5;
+      font-weight: 700;
+  }
+
+  h4, *.h4 { @include h4; }
+
+  @mixin h5 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 0.75em;
+      line-height: 2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.0625em ;
+  }
+
+  h5, *.h5 { @include h5; }
+
+  h6, *.h6 { }
+}
+
+// Bulma Titles and Subtitles
+//
+// Styleguide: Base.Typography.Titles
+
+.title {
+  font-weight: bold;
+  font-family: $font-brand;
+  color: currentColor;
+}
+
+.content .title {
+  @extend .title;
+}
+
+.subtitle {
+  color: $black;
+}
+
+.content .subtitle {
+  @extend .subtitle;
+}
+
+
+// Paragraph
+//
+// Styleguide: Base.Typography.Paragraph
+
+
+// Blockquote
+//
+// Styleguide: Base.Typography.Blockquote
+
+.content blockquote {
+  padding-left: 0;
+  padding-right: 0;
+  border-left: 0;
+  background: transparent;
+
+  p {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.25em;
+  }
+
+  cite {
+    display: block;
+    position: relative;
+    margin-left: 1.5em;
+    font-family: $font-brand;
+    font-style: normal;
+    font-size: 0.875em;
+
+    &::before {
+      display: block;
+      content: '—';
+      position: absolute;
+      left: -1.5em;
+    }
+  }
+}
+
+
+// Ordered List
+//
+// Styleguide: Base.Typography.OrderedList
+
+
+// Unordered List
+//
+// .unstyled - unstyled list
+//
+// Styleguide: Base.Typography.UnorderedList
+
+ul.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.inline {
+  margin-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+
+// Definition List
+//
+// Styleguide: Base.Typography.DefinitionList
+
+
+// Link
+//
+// .biglink - bold, underlined links
+//
+// Styleguide: Base.Typography.Link
+
+a {
+  color: $black;
+
+  &:hover {
+    color: $berry;
+  }
+}
+
+
+a.biglink {
+  display: inline-block;
+  border-bottom: 5px solid currentColor;
+  font-weight: bold;
+
+  &:hover {
+    color: $berry;
+  }
+}
+
+
+// Table
+//
+// .is-bordered  - Bordered cells
+// .is-striped   - Striped rows
+// .is-narrow    - Table sized by content
+// .is-fullwidth - Full width table
+//
+// Styleguide: Base.Typography.Table
+
+
+// Horizontal Rule
+//
+// .bigrule - larger rule
+//
+// Styleguide: Base.Typography.HorizontalRule
+
+hr {
+  height: 3px;
+  &.bigrule {
+    height: 6px;
+  }
+}
+
+.contnet hr {
+  @extend hr;
+}

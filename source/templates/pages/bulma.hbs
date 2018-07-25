@@ -1,0 +1,168 @@
+---
+title: "Bulma"
+---
+
+{{#extend "default"}}
+  {{#content "precontent"}}
+    Pre
+  {{/content}}
+  {{#content "content"}}
+    <div class="content">
+      <p>[Examples of Bulma styling of standard elements.]</p>
+      <h1>Lorem ipsum dolor [h1]</h1>
+      <h2>Lorem ipsum dolor [h2]</h2>
+      <h3>Lorem ipsum dolor [h3]</h3>
+      <h4>Lorem ipsum dolor [h4]</h4>
+      <p><b>Lorem ipsum dolor [b]</b> <i>sit amet [i]</i>, <a href="#">consectetur [a]</a> <a href="#" class="biglink">adipisicing [a.bglink]</a> elit. Nesciunt similique, dolorem ducimus a est dicta rem vel fuga doloremque dolores consectetur maiores perspiciatis quod illo, totam harum. Voluptas, a, facilis. [p]</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt similique, dolorem ducimus a est dicta rem vel fuga doloremque dolores consectetur maiores perspiciatis quod illo, totam harum. Voluptas, a, facilis. [p]</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet [ul li]</li>
+        <li>Sapiente blanditiis voluptatum [ul li]</li>
+        <li>Veniam nobis, ratione aliquid earum [ul li]</li>
+      </ul>
+      <ol>
+        <li>Lorem ipsum dolor sit amet [ol li]</li>
+        <li>Sapiente blanditiis voluptatum [ol li]</li>
+        <li>Veniam nobis, ratione aliquid earum [ol li]</li>
+      </ol>
+      <dl>
+        <dt>Lorem ipsum [dd dl]</dt>
+        <dd>Lorem ipsum dolor sit amet. [dd dl]</dd>
+      </dl>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Lorem [table]</th>
+            <th>Quas</th>
+            <th>Magni</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lorem.</td>
+            <td>Aliquid.</td>
+            <td>Exercitationem.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Molestiae.</td>
+            <td>In.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Enim.</td>
+            <td>Officiis.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table is-bordered">
+        <thead>
+          <tr>
+            <th>Lorem [table.is-bordered]</th>
+            <th>Quas</th>
+            <th>Magni</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lorem.</td>
+            <td>Aliquid.</td>
+            <td>Exercitationem.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Molestiae.</td>
+            <td>In.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Enim.</td>
+            <td>Officiis.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table is-bordered is-striped">
+        <thead>
+          <tr>
+            <th>Lorem [table.is-bordered.is-striped]</th>
+            <th>Quas</th>
+            <th>Magni</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lorem.</td>
+            <td>Aliquid.</td>
+            <td>Exercitationem.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Molestiae.</td>
+            <td>In.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Enim.</td>
+            <td>Officiis.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="tagcloud">
+        <a class="is-selected" href="#">ALL [.tagcloud]</a>
+        <a href="#">Live Arts</a>
+        <a href="#">Visual Arts</a>
+        <a href="#">Writing</a>
+        <a href="#">Film/Digital</a>
+        <a href="#">Dance/Movement</a>
+        <a href="#">Residents</a>
+        <a href="#">A.I.R.</a>
+        <a href="#">Staff</a>
+        <a href="#">Board</a>
+        <a href="#">Youth</a>
+        <a href="#">Industries Members</a>
+      </div>
+      <hr class="bigrule">
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span>Everything</span>
+            <span class="icon">
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">Music &amp; More</a>
+            <a class="dropdown-item">Theatre</a>
+            <a href="#" class="dropdown-item is-active">Galleries</a>
+            <a href="#" class="dropdown-item">Workshops</a>
+            <a href="#" class="dropdown-item">
+              Dance
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="bigrule">
+      <div class="teaser">
+        <div class="eyebrow">Teaser[.eyebrow]</div>
+        <h3 class="title">Lorem Title [.title]</h3>
+        <div class="author">Bert Crenca [.author]</div>
+        <div class="role">Founder [.role]</div>
+        <div class="type">Artist Page [.type]</div>
+        <div class="date">January 1, 2018 [.date]</div>
+        <div class="location">Providence, RI [.location]</div>
+        <div class="description">Lorem ipsum dolor sit amet [.description]</div>
+        <a href="#" class="link">as220.org [.link]</a>
+      </div>
+      <hr class="bigrule">
+      <figure class="figure">
+        <img src="./assets/img/artist-1-img-01.jpg" alt="">
+        <figcaption>
+          <div class="title">Syncopate, 2014</div>
+          <div class="description">Paint on hand-cut canvas, 15 x 13"</div>
+          <div class="location">Private Collection</div>
+        </figcaption>
+      </figure>
+    </div>
+  {{/content}}
+{{/extend}}

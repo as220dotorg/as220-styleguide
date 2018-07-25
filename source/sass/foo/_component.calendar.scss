@@ -1,0 +1,113 @@
+// Calendar
+//
+// Customize the Bulma calendar component
+//
+// Styleguide: Component.Calendar
+
+.calendar {
+  .calendar-nav {
+    color: $black;
+    background: $white;
+
+    .calendar-nav-month {
+      flex: 1;
+      font-family: $font-brand;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .calendar-nav-filter {
+      padding: 0 0.5em;
+    }
+
+    .calendar-nav-left,
+    .calendar-nav-right {
+      padding: 0 0.5em;
+
+      .button {
+        display: block;
+        position: relative;
+        border: 0;
+        color: $black;
+      }
+    }
+
+    .calendar-nav-left .button::before {
+      position: absolute;
+      top: 0.25rem;
+      left: 0;
+      display: block;
+      content: "";
+      border-top: 0.875em solid transparent;
+      border-right: 1.375em solid currentColor;
+      border-bottom: 0.875em solid transparent;
+      border-left: 0 solid transparent;
+    }
+
+    .calendar-nav-right .button:before {
+      position: absolute;
+      top: 0.25rem;
+      right: 0;
+      display: block;
+      content: "";
+      border-top: 0.875em solid transparent;
+      border-right: 0 solid transparent;
+      border-bottom: 0.875em solid transparent;
+      border-left: 1.375em solid currentColor;
+    }
+  }
+
+  .calendar-header {
+    position: relative;
+    padding: 0.5rem 0 0.2rem;
+    color: $black;
+    background: $white;
+
+    .calendar-date {
+      position: relative;
+      font-size: 0.875rem;
+      font-weight: bold;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      top: 0;
+      left: 0.5rem;
+      right: 0.5rem;
+      height: 6px;
+      background: $gray-light;
+    }
+  }
+
+  .calendar-body {
+    .calendar-date {
+      position: relative;
+      font-size: 0.875rem;
+      font-weight: bold;
+      text-align: left;
+      text-transform: uppercase;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 0;
+        left: 0.5rem;
+        right: 0.5rem;
+        height: 6px;
+        background: $yellow;
+      }
+
+      .date-item {
+        font-weight: bold;
+        font-size: 0.875rem;
+        align-self: flex-start;
+      }
+    }
+  }
+}

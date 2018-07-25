@@ -1,0 +1,138 @@
+// Hero
+//
+// Overrides for the Bulma hero component.
+//
+// .hero-artist - community directory artist view
+// .hero-split - news and events node view
+// .hero-headlines - headlines features and carousel
+// .hero-action - action blocks
+//
+// Styleguide: Component.Hero
+
+.hero {
+  .hero-body {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &.overlay-title {
+    .title {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      color: $white;
+      text-shadow: 3px 6px 12px rgba(0,0,0,0.7);
+    }
+  }
+}
+
+// Modifiers
+
+.hero-artist {
+  .columns {
+    flex-direction: row-reverse;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teaser {
+    flex: 1;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 2em;
+    max-width: 32em;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      border-bottom: 6px solid $gray-light;
+      right: 2em;
+      bottom: 0;
+      left: 2em;
+    }
+    .title {
+      margin-bottom: 0.75em;
+    }
+    img {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+// Style variations
+
+.folio-dark .hero-artist {
+  .teaser::after {
+    border-bottom-color: $white;
+  }
+  .title {
+    color: $white;
+  }
+}
+
+.hero-split {
+  .columns {
+    flex-direction: row-reverse;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teaser {
+    flex: 1;
+    margin: 0 auto;
+    padding: 1em 2em;
+    max-width: 32em;
+
+    .title {
+      margin-bottom: 1rem;
+    }
+
+    .author,
+    .date,
+    .description {
+      font-size: 1.5em;
+      line-height: 1.4em;
+    }
+  }
+}
+
+.hero-headlines {
+  .title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .hero-body {
+    padding: 1.5rem 0 0.5rem;
+  }
+}
+
+.hero-action {
+  padding-top: 0;
+  padding-bottom: 0;
+  .container {
+    position: relative;
+    padding: 3rem 1rem 0;
+    background: $yellow;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      content: '';
+      height: 1.5em;
+      background: repeating-linear-gradient(-65deg, transparent, transparent 12px, black 12px, black 24px);
+    }
+  }
+}

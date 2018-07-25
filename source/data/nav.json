@@ -1,0 +1,113 @@
+{
+  "mainnav": [
+    {
+      "label": "About",
+      "href": "#",
+      "state": "is-active",
+      "children": [
+        {
+          "label": "Programs",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "News",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "History",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Mission & Vision",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Campus",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Staff",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Board",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Jobs",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Practice // Practice",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Get Involved!",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Our Supporters!",
+          "href": "#",
+          "state": ""
+        }
+      ]
+    },
+    {
+      "label": "Calendar",
+      "href": "#",
+      "state": "",
+      "children": [
+        {
+          "label": "Everything",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Music & More",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Theatre",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Galleries",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Workshops",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Dance",
+          "href": "#",
+          "state": ""
+        }
+      ]
+    },
+    {
+      "label": "Shop",
+      "href": "#",
+      "state": ""
+    },
+    {
+      "label": "Support",
+      "href": "#",
+      "state": ""
+    }
+  ]
+}

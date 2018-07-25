@@ -1,0 +1,11 @@
+// Section
+//
+// Customize the Bulma section style.
+//
+// Styleguide: Component.Section
+
+.section {
+  .title + .columns {
+    margin-top: 0.5em;
+  }
+}

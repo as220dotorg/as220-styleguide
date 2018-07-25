@@ -1,0 +1,172 @@
+// Carousel
+//
+// Customize the [Slick](https://kenwheeler.github.io/slick/) carousel
+//
+// .carousel-headlines - for new headlines
+// .carousel-related - for related items
+//
+// Styleguide: Component.Carousel
+
+.carousel {
+  &.slick-slider {
+    position: relative;
+    padding-bottom: 3em;
+
+    .slick-slide {
+      padding: 0 1em;
+    }
+  }
+
+  .slide__media {
+    figure,
+    figure:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .slide__caption {
+    padding: 0;
+    font-size: 0.875em;
+
+    .slide__title {
+      margin: 0;
+    }
+  }
+
+  .slick-next,
+  .slick-prev {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    border: 0;
+    width: 2.75em;
+    height: 2.75em;
+    text-indent: 99em;
+    overflow: hidden;
+    color: $yellow;
+    background: transparent;
+    z-index: +1;
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &:before {
+      position: absolute;
+      top: 0.5em;
+      left: 0;
+      display: block;
+      content: "";
+      border-top: 0.875em solid transparent;
+      border-right: 1.375em solid currentColor;
+      border-bottom: 0.875em solid transparent;
+      border-left: 0 solid transparent;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+
+    &:before {
+      position: absolute;
+      top: 0.5em;
+      right: 0;
+      display: block;
+      content: "";
+      border-top: 0.875em solid transparent;
+      border-right: 0 solid transparent;
+      border-bottom: 0.875em solid transparent;
+      border-left: 1.375em solid currentColor;
+    }
+  }
+
+  ul.slick-dots {
+    margin: 0;
+
+    li {
+      margin: 0;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+
+    li {
+      display: inline-block;
+      box-sizing: border-box;
+
+      button {
+        position: relative;
+        border: 0;
+        text-indent: 99em;
+        overflow: hidden;
+        width: 2.75em;
+        height: 2.75em;
+        background: transparent;
+
+        &:focus,
+        &:hover {
+          outline: 0;
+          border: 0;
+        }
+
+        &:before {
+          position: absolute;
+          top: 0.875em;
+          left: 0.8753em;
+          display: block;
+          content: '';
+          background: $gray-medium;
+          border-radius: 50%;
+          height: 1em;
+          width: 1em;
+        }
+      }
+
+      &.slick-active button:before {
+        background: $black;
+      }
+    }
+  }
+}
+// Modifiers
+.carousel.carousel-headlines {
+  .slick-prev {
+    left: 1rem;
+  }
+
+  .slick-next {
+    right: 1rem;
+  }
+
+  .slick-dots li button::before {
+    background: lighten($black, 30%);
+  }
+
+  .slick-dots li.slick-active button::before {
+    background: $white;
+  }
+}
+
+.hero.is-dark .carousel.carousel-headlines {
+  .date {
+    color: $white;
+  }
+
+  .title {
+    margin: 0;
+    color: $yellow;
+  }
+}
+
+.carousel.carousel-related {
+  .slick-next,
+  .slick-prev {
+    color: $black;
+  }
+}

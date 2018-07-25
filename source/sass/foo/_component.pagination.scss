@@ -1,0 +1,25 @@
+// Pagination
+//
+// Override the Bulma pagination component.
+//
+// Styleguide: Components.Pagination
+
+.pagination {
+  .pagination-link {
+    border: 0;
+    font-weight: bold;
+    color: $black;
+    background-color: $yellow;
+    &:hover {
+      background-color: $berry;
+    }
+  }
+  .pagination-link.is-current {
+    color: $yellow;
+    background-color: $black;
+  }
+}
+
+.columns + .pagination {
+  margin-top: 3em;
+}

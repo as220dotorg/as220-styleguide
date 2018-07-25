@@ -1,0 +1,112 @@
+---
+title: "Special"
+---
+
+{{#extend "default"}}
+{{#content "pagestyle"}}
+
+/* Import custom font from fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds');
+
+/* change the body text and background colors */
+body {
+    color: #ff3793;
+    background: #091651;
+}
+
+/* apply the custom font to titles */
+.title,
+.content .title {
+  font-family: 'Trade Winds', cursive;
+  font-weight: 400;
+}
+
+/* set styles for the main hero, see bulma.io */
+.hero-main {
+  color: white;
+  background-image: url('./assets/img/special-01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-main .title,
+.hero-main .subtitle {
+  text-shadow: 1px 7px 14px rgb(7,25,92);
+}
+
+.hero-main .subtitle {
+  color: #ff3793;
+  font-weight: bold;
+  text-shadow: 1px 3px 7px rgb(7,25,92);
+}
+
+/* create a custom colored section */
+.my-pink-section {
+  color: #091651;
+  background: #ff3793;
+}
+
+/* customize the footer */
+.footer {
+  color: #ff3793;
+  background: #091651;
+}
+
+{{/content}}
+{{#content "precontent"}}
+  <section class="hero hero-main is-medium">
+    <div class="hero-body">
+      <div class="title is-1">Special Event</div>
+      <div class="subtitle is-4">Style Override Example</div>
+    </div>
+  </section>
+{{/content}}
+  {{#content "content"}}
+    <h4 class="title">Special content</h4>
+    <div class="columns is-multiline">
+      <div class="column is-one-quarter">
+        <img src="./assets/img/special-02.jpg" alt="">
+      </div>
+      <div class="column is-one-quarter">
+        <img src="./assets/img/special-03.jpg" alt="">
+      </div>
+      <div class="column is-one-quarter">
+        <img src="./assets/img/special-04.jpg" alt="">
+      </div>
+      <div class="column is-one-quarter">
+        <img src="./assets/img/special-05.jpg" alt="">
+      </div>
+      <div class="column is-one-quarter">
+        <img src="./assets/img/special-06.jpg" alt="">
+      </div>
+      <div class="column is-one-quarter">
+        <img src="./assets/img/special-07.jpg" alt="">
+      </div>
+      <div class="column is-one-quarter">
+        <img src="./assets/img/special-08.jpg" alt="">
+      </div>
+    </div>
+  {{/content}}
+  {{#content "postcontent"}}
+  <section class="hero section my-pink-section">
+    <div class="container">
+      <div class="flow content">
+        <div class="flow_middle">
+          <h2 class="title is-2">Lorem ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus laudantium consequatur, amet tenetur, tempore dolorum earum ipsum accusamus dignissimos perferendis ab cum eveniet provident est dolore temporibus, molestiae sapiente ad!</p>
+        </div>
+        <div class="flow_left">
+          <h4>Consectetur elit</h4>
+          <p>Lorem ipsum<br>
+            dolor sit amet<br>
+            consectetur 1234</p>
+        </div>
+        <div class="flow_middle">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus iste error voluptate fuga et. Dolores necessitatibus provident iusto, autem laboriosam minima reprehenderit porro cum est natus eos. Tenetur, numquam molestiae?</p>
+          <p>Laboriosam minima ex distinctio voluptate ullam, debitis temporibus. Voluptate aliquid autem expedita aperiam hic eum officiis dignissimos. Molestias minima voluptatum reiciendis iure laborum. Mollitia ipsam eum culpa, earum nemo consequatur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{/content}}
+{{/extend}}
