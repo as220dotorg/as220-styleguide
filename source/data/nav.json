@@ -3,7 +3,7 @@
     {
       "label": "About",
       "href": "#",
-      "state": "is-active",
+      "state": "",
       "children": [
         {
           "label": "Programs",
@@ -57,6 +57,48 @@
         },
         {
           "label": "Our Supporters!",
+          "href": "#",
+          "state": ""
+        }
+      ]
+    },
+    {
+      "label": "Community",
+      "href": "#",
+      "state": "",
+      "children": [
+        {
+          "label": "Artist Directory",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "AS220 Labs",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "AS220 Media Arts",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "AS220 Printshop",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "AS220 Youth",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Galleries",
+          "href": "#",
+          "state": ""
+        },
+        {
+          "label": "Foo(d) & Bar",
           "href": "#",
           "state": ""
         }
